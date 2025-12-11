@@ -5,15 +5,17 @@
 let userBet = 'pari';
 
 
-let numbUser = '5';
+let numbUser = 5;
 
 
 //Numero della CPU
 
 const cpuNumber = rng(1,5);
-
 console.log(cpuNumber);
 
+// Operazioni
+const numbSum = sum(cpuNumber, numbUser);
+console.log(numbSum);
 
 
 // Funzioni
@@ -23,4 +25,10 @@ console.log(cpuNumber);
 function rng(min, max){
     const result = Math.floor(Math.random() * (max - min + 1)) + min;
     return result;
+}
+
+// Funzione per sommare
+
+function sum(number1 ,number2){
+    return number1 + number2
 }
