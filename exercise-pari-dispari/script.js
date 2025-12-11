@@ -1,11 +1,12 @@
 // Pari o Dispari
 
+
 // Scelte dell'utente
 
-let userBet = 'pari';
-
+let userBet = prompt('Scegli se la somma sarà Pari o Dispari').toLowerCase();
 
 let numbUser = parseInt(prompt('Inserisci un numero tra 1 e 5'));
+console.log(numbUser);
 
 
 //Numero della CPU
@@ -16,6 +17,19 @@ console.log(cpuNumber);
 // Operazioni
 const numbSum = sum(cpuNumber, numbUser);
 console.log(numbSum);
+
+const oddOrEven = oddEven(numbSum);
+console.log(oddOrEven);
+
+
+// Confronto
+let winnerOrLoser = "You are a loser!"
+
+if (userBet === oddOrEven) {
+    winnerOrLoser = "You are a winner!"
+}
+
+console.log(winnerOrLoser);
 
 
 // Funzioni
