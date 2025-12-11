@@ -5,7 +5,7 @@
 let userBet = 'pari';
 
 
-let numbUser = 5;
+let numbUser = parseInt(prompt('Inserisci un numero tra 1 e 5'));
 
 
 //Numero della CPU
@@ -31,4 +31,14 @@ function rng(min, max){
 
 function sum(number1 ,number2){
     return number1 + number2
+}
+
+// Funzione Pari o Dispari
+
+function oddEven(number){
+    let result = "pari";
+    if(number % 2 === 1){
+        result = "dispari";
+    }
+    return result; 
 }
