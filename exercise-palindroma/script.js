@@ -2,7 +2,17 @@
 
 // Inserire una parola
 
-let userWord = 'Anna'
+let userWord = 'anna'
+let palindromeWord = false;
+
+
+// Condizione per Palindroma o meno
+
+
+if(wordReversed(userWord) === userWord){
+    palindromeWord = true;
+} 
+
 
 
 // Funzioni
@@ -15,4 +25,6 @@ function wordReversed(word){
     return result;
 }
 
+console.log(userWord);
 console.log(wordReversed(userWord));
+console.log(palindromeWord);
