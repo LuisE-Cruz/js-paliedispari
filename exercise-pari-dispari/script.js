@@ -4,6 +4,7 @@
 // Scelte dell'utente
 
 let userBet = prompt('Scegli se la somma sarà Pari o Dispari').toLowerCase();
+console.log(userBet);
 
 let numbUser = parseInt(prompt('Inserisci un numero tra 1 e 5'));
 console.log(numbUser);
@@ -14,6 +15,7 @@ console.log(numbUser);
 const cpuNumber = rng(1,5);
 console.log(cpuNumber);
 
+
 // Operazioni
 const numbSum = sum(cpuNumber, numbUser);
 console.log(numbSum);
@@ -23,6 +25,7 @@ console.log(oddOrEven);
 
 
 // Confronto
+
 let winnerOrLoser = "You are a loser!"
 
 if (userBet === oddOrEven) {
@@ -34,6 +37,7 @@ console.log(winnerOrLoser);
 
 // Funzioni
 
+
 // Funzione per creare numero random
 
 function rng(min, max){
@@ -41,11 +45,13 @@ function rng(min, max){
     return result;
 }
 
+
 // Funzione per sommare
 
 function sum(number1 ,number2){
     return number1 + number2
 }
+
 
 // Funzione Pari o Dispari
 
