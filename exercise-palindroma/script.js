@@ -2,7 +2,7 @@
 
 // Inserire una parola
 
-let userWord = 'anna'
+let userWord = prompt("Inserisci una parola");
 let palindromeWord = false;
 
 
@@ -16,6 +16,8 @@ if(wordReversed(userWord) === userWord){
 
 
 // Funzioni
+
+// Funzione per invertire la parola data
 
 function wordReversed(word){
     let result = "";
